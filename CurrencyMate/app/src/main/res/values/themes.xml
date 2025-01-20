@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.AppCompat.CurrencyMate" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Kolory i inne atrybuty możesz skonfigurować tutaj -->
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#03DAC5</item>
+    </style>
+
+</resources>
