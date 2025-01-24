@@ -5,6 +5,8 @@
     <string name="enter_amount">Wpisz kwotę</string>
     <string name="convert">Przelicz</string>
     <string name="result_placeholder">Wynik pojawi się tutaj</string>
+    <string name="distance_placeholder">Distance will be displayed here</string>
+
 
     <string-array name="currency_list">
         <item>USD</item>
