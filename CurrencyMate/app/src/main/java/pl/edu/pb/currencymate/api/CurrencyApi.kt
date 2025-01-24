@@ -1,10 +1,18 @@
 package pl.edu.pb.currencymate.api
 
 
-import pl.edu.pb.currencymate.ExchangeRateResponse
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface CurrencyApi {
-    @GET("exchangerates/tables/A/?format=json")
-    suspend fun getExchangeRates(): List<ExchangeRateResponse>
+    @GET("rates/A/{code}/")
+    suspend fun getCurrencyRate(@Path("code") code: String): CurrencyResponse
 }
+
+data class CurrencyResponse(
+    val rates: List<Rate>
+)
+
+data class Rate(
+    val mid: Double
+)

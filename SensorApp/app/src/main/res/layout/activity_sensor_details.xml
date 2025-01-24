@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- Tekst wyświetlający wartość czujnika światła -->
+    <TextView
+        android:id="@+id/sensor_light_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wartość czujnika"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Przycisk do pobrania lokalizacji -->
+    <Button
+        android:id="@+id/get_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pobierz lokalizację"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Tekst wyświetlający lokalizację -->
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lokalizacja nieznana"
+        android:textSize="16sp"
+        android:padding="8dp" />
 </LinearLayout>
